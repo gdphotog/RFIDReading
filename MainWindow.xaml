@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RFID_Reading_And_Decoding"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="RFID Decoding for RCCL Format cards" Height="327" Width="800">
+  <Grid Margin="0,0,0,7">
+
+
+    <StackPanel FocusManager.FocusedElement="{Binding ElementName=txtRFIDInput}">
+      <TextBox x:Name="txtRFIDInput"  HorizontalAlignment="Left" Height="23" Margin="35,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="700" Grid.ColumnSpan="3"/>
+
+    </StackPanel>
+    <Label Content="Raw HEX From Card" HorizontalAlignment="Left" Margin="35,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.577" Width="160" Grid.ColumnSpan="3"/>
+    <Label Content="Decoded HEX from Card" HorizontalAlignment="Left" Margin="35,145,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.577" Width="160" Grid.ColumnSpan="3"/>
+    <Label Content="16 Digit Folio Number" HorizontalAlignment="Left" Margin="35,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.577" Width="160" Grid.ColumnSpan="3"/>
+    <Label x:Name="LblRawHEX" Content="" HorizontalAlignment="Left" Margin="220,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.577" Width="510"/>
+    <Label x:Name="LblDecodedHEX" Content="" HorizontalAlignment="Left" Margin="220,145,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.577" Width="510"/>
+    <Label x:Name="Lbl16DigitFolio" Content="" HorizontalAlignment="Left" Margin="220,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.577" Width="510"/>
+  </Grid>
 </Window>
